@@ -10,6 +10,12 @@ function slider() {
         },
         breakpoints: {
             320: {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                centeredSlidesBounds: false,
+
+            },
+            480: {
                 slidesPerView: 3,
                 spaceBetween: 0
             },

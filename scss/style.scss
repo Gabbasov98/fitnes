@@ -671,6 +671,7 @@ h3 {
                 line-height: 20px;
                 text-align: center;
                 color: #3A3A3A;
+                font-weight: 400;
             }
         }
         &-hint {
@@ -1016,9 +1017,6 @@ h3 {
         font-size: 14px;
         line-height: 17px;
     }
-    h3 {
-        font-size: 22px;
-    }
     .container {
         width: 760px;
     }
@@ -1171,6 +1169,9 @@ h3 {
         }
     }
     .target {
+        h3 {
+            font-size: 22px;
+        }
         &__list {
             & li {
                 padding-left: 18px;
@@ -1183,6 +1184,9 @@ h3 {
         }
     }
     .who {
+        h3 {
+            font-size: 22px;
+        }
         &__left {
             width: 500px;
         }
@@ -1316,13 +1320,6 @@ h3 {
         font-size: 23.2464px;
         line-height: 27px;
     }
-    h2 {
-        font-size: 20px;
-    }
-    h3 {
-        font-size: 14px;
-        line-height: 16px;
-    }
     .nav {
         &__inner {
             display: block;
@@ -1397,6 +1394,7 @@ h3 {
     .materials {
         h2 {
             text-transform: uppercase;
+            font-size: 19px;
         }
         &__inner {
             padding: 55px 0 150px;
@@ -1450,6 +1448,10 @@ h3 {
     }
     .target {
         padding: 16px 0 28px;
+        h3 {
+            font-size: 14px;
+            line-height: 16px;
+        }
         &__list {
             margin-top: 20px;
             & li {
@@ -1460,6 +1462,10 @@ h3 {
     }
     .who {
         padding: 30px 0 50px;
+        h3 {
+            font-size: 14px;
+            line-height: 16px;
+        }
         &__left {
             padding-right: 120px;
             width: 100%;
@@ -1493,10 +1499,221 @@ h3 {
             }
         }
     }
-    .tariff,
-    .result,
-    .about,
+    .tariff {
+        padding: 30px 0 15px;
+        &__items {
+            margin-top: 12px;
+        }
+        &__item {
+            max-width: 350px;
+            margin-left: auto;
+            margin-right: auto;
+            &-price {
+                margin-top: 0;
+            }
+        }
+        &__bottom {
+            font-size: 12px;
+            line-height: 130%;
+            margin-top: 10px;
+        }
+    }
+    .result {
+        padding: 30px 0;
+        .swiper-slide-next {
+            margin-left: -80px;
+        }
+        & .swiper-pagination-bullet {
+            width: 7px;
+            height: 7px;
+        }
+        & .swiper-pagination-bullet-active {
+            width: 10px;
+            height: 10px;
+        }
+    }
+    .about {
+        padding: 70px 0 55px;
+        &__left {
+            width: 227px;
+            & svg {
+                width: 200px;
+                height: auto;
+                right: unset;
+                left: 115px;
+                top: -90px;
+            }
+        }
+        &__right {
+            & p {
+                font-size: 14px;
+                line-height: 15px;
+                &:not(:last-child) {
+                    margin-bottom: 7px;
+                }
+            }
+            & i {
+                left: unset;
+                right: -60px;
+                margin-left: 0;
+                left: unset;
+                border: 28px solid transparent;
+                border-left: 40px solid #EDC9AC;
+            }
+        }
+    }
     .footer {
-        display: none;
+        padding-top: 15px;
+        &__title {
+            font-size: 20px;
+        }
+        &__contacts {
+            margin-top: 0;
+            display: block;
+            text-align: center;
+            &-item {
+                margin-top: 18px;
+                margin-left: auto;
+                margin-right: auto;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+        &__info {
+            margin-top: 20px;
+            & h4 {
+                font-size: 20px;
+                line-height: 23px;
+                margin-bottom: 14px;
+            }
+            & p {
+                font-size: 14px;
+                line-height: 16px;
+                margin-top: 0;
+            }
+        }
+        &__syte-by {
+            margin-top: 30px;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .main {
+        overflow-x: hidden;
+        &__inner {}
+        &__left {
+            // padding-right: 200px;
+        }
+        &__top {
+            padding-left: 0;
+        }
+        &__right {
+            & img {
+                width: 90px;
+                position: absolute;
+                margin: 0;
+                right: -50px;
+                top: 30px;
+            }
+            &:after {
+                display: none;
+            }
+            &:before {
+                bottom: unset;
+                top: 170px;
+                width: 30px;
+                height: 30px;
+                right: 0px;
+            }
+        }
+        &__list {
+            padding-left: 80px;
+            & br {
+                display: none;
+            }
+        }
+        &__bottom {
+            &-btn {
+                margin-left: auto;
+                margin-right: auto;
+            }
+            &-left {
+                left: 0;
+            }
+        }
+    }
+    .who {
+        &__left {
+            padding-right: 20px;
+        }
+        &__right {
+            &:after,
+            &:before {
+                display: none;
+            }
+            & img {
+                right: -15px;
+                width: 75px;
+            }
+        }
+    }
+    .materials {
+        &__left {
+            padding: 0;
+            margin: 0;
+            & img {
+                position: absolute;
+                width: 80px;
+            }
+            &:before,
+            &:after {
+                display: none;
+            }
+        }
+        &__right {
+            padding-left: 80px;
+        }
+    }
+    .tariff {
+        &__item {
+            border-width: 3px;
+        }
+    }
+    .result {
+        .container {
+            padding: 0 15px;
+        }
+        .swiper-wrapper {
+            height: 290px;
+        }
+        .swiper-slide {
+            height: 280px !important;
+            box-shadow: none;
+        }
+        & .swiper-slide-next {
+            width: unset !important;
+            height: unset;
+            margin-left: unset;
+            &+.swiper-slide {
+                width: unset !important;
+                margin-left: unset;
+                height: unset;
+            }
+        }
+    }
+    .about {
+        &__inner {
+            display: block;
+        }
+        &__left {
+            width: 100%;
+            & svg {
+                display: none;
+            }
+        }
+        &__right {
+            margin-top: 15px;
+        }
     }
 }
