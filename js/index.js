@@ -43,7 +43,7 @@ $(document).ready(function() {
         event.preventDefault();
         var idc = $(this).attr('href'),
             top = $(idc).offset().top;
-        $('body,html').animate({ scrollTop: top - 165 }, 500);
+        $('body,html').animate({ scrollTop: top - 175 }, 500);
         if ($(window).innerWidth() < 992) {
             $(".nav").hide()
         }
