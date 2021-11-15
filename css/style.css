@@ -917,6 +917,8 @@ h3 {
 }
 .result .swiper-container {
   padding-bottom: 30px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .about {

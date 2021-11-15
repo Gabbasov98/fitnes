@@ -43,7 +43,11 @@ $(document).ready(function() {
         mobile: false,
         live: false
     })
-    wow.init();
+
+
+    if ($(window).innerWidth() > 992) {
+        wow.init();
+    }
 
     $(".header__burger").click(function() {
         $(this).toggleClass("header__burger--active")
