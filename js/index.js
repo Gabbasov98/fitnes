@@ -34,6 +34,17 @@ function slider() {
 $(document).ready(function() {
     slider()
 
+
+
+    wow = new WOW({
+        boxClass: 'wow',
+        animateClass: 'animated',
+        offset: 0,
+        mobile: true,
+        live: false
+    })
+    wow.init();
+
     $(".header__burger").click(function() {
         $(this).toggleClass("header__burger--active")
         $(".nav").slideToggle()

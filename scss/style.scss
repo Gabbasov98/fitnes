@@ -111,9 +111,14 @@ body {
     height: 100%;
     color: #000;
     scroll-behavior: smooth;
+    overflow-x: hidden;
     &.openmodal {
         overflow-y: hidden;
     }
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 h1,
@@ -298,10 +303,14 @@ h3 {
         font-size: 22px;
         line-height: 26px;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: #FFFFFF !important;
         margin-top: 65px;
         position: relative;
+        display: block;
         z-index: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         & span {
             position: absolute;
             background: #FFFFFF;
@@ -495,7 +504,10 @@ h3 {
             font-size: 22px;
             line-height: 26px;
             text-transform: uppercase;
-            color: #FFFFFF;
+            color: #FFFFFF !important;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             & span {
                 position: absolute;
                 background: #FFFFFF;
@@ -642,6 +654,9 @@ h3 {
             color: #FFFFFF;
             padding-left: 75px;
             justify-content: flex-start;
+            color: #FFFFFF !important;
+            display: flex;
+            align-items: center;
             & span {
                 position: absolute;
                 background: #FFFFFF;
@@ -762,6 +777,10 @@ h3 {
         color: #FFFFFF;
         padding-left: 55px;
         justify-content: flex-start;
+        color: #FFFFFF !important;
+        display: flex;
+        align-items: center;
+        // justify-content: center;
         & span {
             position: absolute;
             background: #FFFFFF;
@@ -921,7 +940,6 @@ h3 {
 .about {
     padding: 130px 0 110px;
     // background: #EEEDED;
-    overflow-x: hidden;
     &__inner {
         display: flex;
     }
@@ -1863,8 +1881,12 @@ h3 {
         .swiper-wrapper {
             height: 290px;
         }
+        .swiper-container {
+            padding: 0 30px;
+        }
         .swiper-slide {
             height: 280px !important;
+            width: 100% !important;
             box-shadow: none;
         }
         & .swiper-slide-next {
@@ -1899,6 +1921,24 @@ h3 {
                     display: none;
                 }
             }
+        }
+    }
+    .detail {
+        &__item {
+            width: 100%;
+            &-badge {
+                width: calc(100% - 20px);
+                height: unset;
+                min-height: 60px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .result {
+        .swiper-container {
+            padding: 0;
         }
     }
 }
