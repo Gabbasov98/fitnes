@@ -6,9 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>You be fit</title>
-    <link rel="stylesheet" href="css/nice-select.css">
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -21,14 +19,16 @@
                 </a>
                 <div class="nav">
                     <div class="nav__inner">
-                        <a href="#main" class="nav__item nav__item--active"><span>Клуб</span></a>
-                        <a href="#target" class="nav__item"><span>Для кого</span></a>
-                        <a href="#tariff" class="nav__item"><span>Тарифы</span></a>
+                        <a href="#materials" class="nav__item nav__item--active"><span>Клуб</span></a>
+                        <a href="#detail" class="nav__item"><span>Состав</span></a>
+                        <a href="#who" class="nav__item"><span>Как проходит</span></a>
+                        <a href="#steps" class="nav__item"><span>Как попасть</span></a>
                         <a href="#result" class="nav__item"><span>Результаты</span></a>
-                        <a href="#about" class="nav__item"><span>Обо мне</span></a>
+                        <a href="#tariff" class="nav__item"><span>Тарифы</span></a>
+                        <a href="#about" class="nav__item"><span>О тренере</span></a>
                     </div>
                 </div>
-                <div class="header__burger">
+                <button class="header__burger">
                     <svg width="42" height="10" viewBox="0 0 42 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="5" cy="5" r="5" transform="rotate(-90 5 5)" fill="#E4A978"/>
                         <circle cx="21" cy="5" r="5" transform="rotate(-90 21 5)" fill="#E4A978"/>
@@ -38,7 +38,7 @@
                         <rect y="3.53552" width="5" height="45" transform="rotate(-45 0 3.53552)" fill="#E4A978"/>
                         <rect x="31.8198" width="5" height="45" transform="rotate(45 31.8198 0)" fill="#E4A978"/>
                     </svg>
-                </div>
+                </button>
             </div>
         </div>
     </header>
@@ -47,50 +47,18 @@
         <div class='container'>
             <div class='main__inner'>
                 <div class="main__left">
-                    <div class="main__top">
-                        <h1>Онлайн фитнес клуб</h1>
-                        <p class="main__subtitle">начало прямых эфиров <span>11 Октября</span> </p>
-                    </div>
-                    <div class="main__list">
-                        <ul>
-                            <li>
-                                Тренировки без инвентаря
-                                <div class="main__list-days">
-                                    <span>ПН</span>
-                                    <span>СР</span>
-                                    <span>ПТ</span>
-                                </div>
-                            </li>
-                            <li>
-                                Тренировки с фитнес резинками
-                                <div class="main__list-days">
-                                    <span>ВТ</span>
-                                    <span>ЧТ</span>
-                                </div>
-                            </li>
-
-                            <li>
-                                Тренировки <span>ЗДОРОВАЯ СПИНА</span> <br> от Ольги Шамрай
-                                <div class="main__list-days">
-                                    <span>ВС</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="main__bottom">
-                        <div class="main__bottom-left">
-                            <strong>15</strong>
-                            <span>тренировок </span>
-                        </div>
-                        <button class="main__bottom-btn">
-                            записаться
-                            <span>
-                                <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M19 11.4348L0.152174 0.552986V22.3166L19 11.4348Z" fill="#E4A978"/>
-                                </svg>
-                            </span>
-                        </button>
-                    </div>
+                    <p class="main__subtitle main__subtitle1">Онлайн фитнес клуб</p>
+                    <h1 class="main__title">юлии хозяиновой</h1>
+                    <p class="main__subtitle main__subtitle2">БЕЗ ПП головного мозга</p>
+                    <p class="main__subtitle main__subtitle3">Фитнес с УМОМ </p>
+                    <button class="main__btn">
+                        Хочу в клуб
+                        <span>
+                            <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M19 11.4348L0.152174 0.552986V22.3166L19 11.4348Z" fill="#E4A978"/>
+                            </svg>
+                        </span>
+                    </button>
                 </div>
                 <div class="main__right">
                     <img src="images/girl.png" alt="">
@@ -99,28 +67,41 @@
         </div>
     </section>
 
-    <section class='materials'>
+    <section id="materials" class='materials'>
         <div class='container'>
             <div class='materials__inner'>
                 <div class="materials__left">
                     <img src="images/girl2.png" alt="">
+                    <span class="materials__rectangle materials__rectangle1"></span>
+                    <span class="materials__rectangle materials__rectangle2"></span>
+                    <span class="materials__rectangle materials__rectangle3"></span>
                 </div>
                 <div class="materials__right">
-                    <h2>Всем участницам <br> <span>дополнительные МАТЕРИАЛЫ:</span></h2>
+                    <h2>ЧТО ТЕБЯ ЖДЕТ В КЛУБЕ</h2>
                     <div class="materials__list">
                         <ul>
                             <li>
-                                Обучение персональному расчету КБЖУ
-                                <span>(видео уроки фитнес математики)</span>
+                                Избавитесь от лишних кг
+
+                                <span>(минус 2-5 кг за месяц)</span>
                             </li>
                             <li>
-                                Примеры меню на разную калорийность
+                                Вернете упругость и нормоТОНУС мышцам
                             </li>
-                            <li>Антицеллюлитный чек-лист</li>
+                            <li>Уберете СПАСАТЕЛЬНЫЙ КРУГ на животе</li>
+                            <li>Уменьшите “ляжки, ушки, галифе”</li>
+                            <li>
+                                Избавитесь от боли в пояснице
+                                <span>(и других отделах спины)</span>
+                            </li>
+                            <li>Сделаете округлыми свои ягодицы</li>
+                            <li>Выстроите свой рацион БЕЗ 🚫 срывов и раздражения</li>
+                            <li>Перестанете бояться еды</li>
+                            <li>Разберётесь со СВОИМИ персональными нормами КБЖУ</li>
                         </ul>
                     </div>
                     <button class="materials__right-btn">
-                        участвовать
+                        присоединиться
                         <span>
                             <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M19 11.4348L0.152174 0.552986V22.3166L19 11.4348Z" fill="#E4A978"></path>
@@ -132,35 +113,90 @@
         </div>
     </section>
 
-    <section class='target' id="target">
+    <section id="detail" class='detail'>
         <div class='container'>
-            <h3>Если ваша цель</h3>
-            <div class='target__list'>
-                <ul>
-                    <li>Уменьшить талию на 5-10 см </li>
-                    <li>Уменьшить талию на 5-10 см</li>
-                    <li>Стать желанной и энергичной </li>
-                    <li>Стать желанной и энергичной</li>
-                    <li>Избавиться от 2 до 5 кг.</li>
-                    <li>Избавиться от 2 до 5 кг. </li>
-                </ul>
+            <div class='detail__inner'>
+                <h2 class="detail__title">ИЗ ЧЕГО СОСТОИТ КЛУБ</h2>
+                <div class="detail__items">
+                    <div class="detail__item">
+                        <div class="detail__item-inner">
+                            <div class="detail__item-badge">ТРЕНИРОВКИ</div>
+                            <div class="detail__item-desc">
+                                15 тренировок в прямом эфире <br>
+                                <span>(Запись сохраняется на время всего месяца и далее)</span>
+                            </div>
+                            <div class="detail__item-desc">
+                                тренировки от простого к сложному <br>
+                                <span>(без инвентаря и с фитнес-резинками на выбор)</span>
+                            </div>
+                            <div class="detail__item-desc">
+                                с упором на проблемные зоны
+                            </div>
+                            <div class="detail__item-desc">
+                                без прыжков, приседаний и других упражнений <br> приводящих вред нашему организму
+                            </div>
+                            <div class="detail__item-desc">
+                                Только БЕРЕЖНЫЙ ПОДХОД, в удовольствие, максимально <br> нацеленные на проработку запросов участниц
+                            </div>
+                            <div class="detail__item-desc">
+                                Каждый месяц новая АКЦЕНТНАЯ ТЕМА <span>(живот, ноги, спина и тд)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail__item">
+                        <div class="detail__item-inner">
+                            <div class="detail__item-badge">Питание</div>
+                            <div class="detail__item-desc">
+                                Обучение расчетам собственной нормы КБЖУ
+                            </div>
+                            <div class="detail__item-desc">
+                                Примеры меню и рациона
+                            </div>
+                            <div class="detail__item-desc">
+                                ПП рецепты на любой карман
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail__item">
+                        <div class="detail__item-inner">
+                            <div class="detail__item-badge">
+                                Тренировки <br>здоровое движение
+                            </div>
+                            <div class="detail__item-desc">
+                                дополнительные тренировки от приглашённого специалиста на <br> ДЫХАНИЕ, тазовое дно, мобильность суставов и тд
+                            </div>
+                            <div class="detail__item-desc">
+                                включение в 15 тренировок техник и методик, восстанавливающие <br> подвижность суставов, связок и работу позвоночника
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail__item">
+                        <div class="detail__item-inner">
+                            <div class="detail__item-badge">ОТЕКи и целлюлит</div>
+                            <div class="detail__item-desc">
+                                Антицеллюлитный чек лист
+                            </div>
+                            <div class="detail__item-desc">
+                                Техники и методики от отеков еженедельно в сториз нашего клуба
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section class='who'>
+    <section id="who" class='who'>
         <div class='container'>
-            <h3>Если вы постоянно</h3>
+            <h3>как проходит месяц в клубе</h3>
             <div class='who__inner'>
                 <div class="who__left">
                     <div class="who__list">
                         <ul>
-                            <li>Срываетесь и чувствуете неконтролируемую тягу к еде </li>
-                            <li>Теряете мотивацию и всякие надежды сбросить лишний вес</li>
-                            <li>Не можете подобрать нужные упражнения или боитесь сделать их неправильно </li>
-                            <li>Не знаете что делать, если вес «стоит»</li>
-                            <li>Думаете, что правильное питание–это сложно, дорого и невкусно </li>
-                            <li>Стесняетесь ходить в спортзал и не знаете, с чего начать свои тренировки.</li>
+                            <li>Старт 1 числа каждого месяца</li>
+                            <li>После оплаты вы попадаете в закрытую группу Инстаграм с подробным расписанием ТРЕНИРОВОК</li>
+                            <li>Получаете ОБУЧАЮЩИЙ РАЗДЕЛ ПО ПИТАНИЮ </li>
+                            <li>Получаете АНТИЦЕЛЛЮЛИТНЫЙ ЧЕК</li>
                         </ul>
                     </div>
                 </div>
@@ -170,21 +206,116 @@
             </div>
             <div class="who__bottom">
                 <button class="who__bottom-btn">
-                    тогда скорее оставляйте <br>
-                    заявку на онлайн-курс
+                    ВСТУПИТЬ В КЛУБ
                     <span>
                         <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M19 11.4348L0.152174 0.552986V22.3166L19 11.4348Z" fill="#E4A978"></path>
                         </svg>
                     </span>
                 </button>
-                <div class="who__bottom-hint">
-                    и убедитесь, что <br>
-                    <span>стройная подтянутая фигура <br>
-                        доступна каждому</span>
-                </div>
             </div>
 
+        </div>
+    </section>
+
+    <section id="steps" class='steps'>
+        <div class='container'>
+            <h2 class="steps__title">чТО СДЕЛАТЬ, ЧТОБЫ ПОПАСТЬ</h2>
+            <div class='steps__items'>
+                <div class="steps__item">
+                    <div class="steps__item-title">ШАГ 1</div>
+                    <div class="steps__item-icon">
+                        <img src="images/wallet.png" alt="">
+
+                    </div>
+                    <div class="steps__item-desc">
+                        ️ОПЛАТИТЬ КУРС
+                    </div>
+                </div>
+                <div class="steps__item">
+                    <div class="steps__item-title">ШАГ 2</div>
+                    <div class="steps__item-icon">
+                        <img src="images/email.png" alt="">
+                    </div>
+                    <div class="steps__item-desc">
+                        ️ПОЛУЧИТЬ ПИСЬМО
+                    </div>
+                </div>
+                <div class="steps__item">
+                    <div class="steps__item-title">ШАГ 3</div>
+                    <div class="steps__item-icon">
+                        <img src="images/reading-book.png" alt="">
+                    </div>
+                    <div class="steps__item-desc">
+                        ИЗУЧИТЬ РАЗДЕЛЫ <br>
+                        <span>(питание и целлюлит)</span>
+                    </div>
+                </div>
+                <div class="steps__item">
+                    <div class="steps__item-title">ШАГ 4</div>
+                    <div class="steps__item-icon">
+                        <img src="images/link.png" alt="">
+                    </div>
+                    <div class="steps__item-desc">
+                        ️ПЕРЕЙТИ ПО ССЫЛКЕ <br> И ОСТАВИТЬ ЗАПРОС <br>
+                        <span>(1 числа месяца)</span>
+                    </div>
+                </div>
+            </div>
+            <button class="steps__btn">
+                ПРИСОЕДИНИТЬСЯ
+                <span>
+                    <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M19 11.4348L0.152174 0.552986V22.3166L19 11.4348Z" fill="#E4A978"></path>
+                    </svg>
+                </span>
+            </button>
+        </div>
+    </section>
+
+    <section class='result' id="result">
+        <div class='container'>
+            <h3>Результаты</h3>
+            <div class='result__inner'>
+                <div class='swiper-container'>
+                    <div class='swiper-wrapper'>
+                        <div class='swiper-slide'>
+                            <img src="images/slide1.jpg" alt="">
+                        </div>
+                        <div class='swiper-slide'>
+                            <img src="images/slide2.jpg" alt="">
+                        </div>
+                        <div class='swiper-slide'>
+                            <img src="images/slide3.jpg" alt="">
+                        </div>
+                        <div class='swiper-slide'>
+                            <img src="images/slide4.jpg" alt="">
+                        </div>
+                        <div class='swiper-slide'>
+                            <img src="images/slide5.jpg" alt="">
+                        </div>
+                        <div class='swiper-slide'>
+                            <img src="images/slide1.jpg" alt="">
+                        </div>
+                        <div class='swiper-slide'>
+                            <img src="images/slide2.jpg" alt="">
+                        </div>
+                        <div class='swiper-slide'>
+                            <img src="images/slide3.jpg" alt="">
+                        </div>
+                        <div class='swiper-slide'>
+                            <img src="images/slide4.jpg" alt="">
+                        </div>
+                        <div class='swiper-slide'>
+                            <img src="images/slide5.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class='swiper-pagination'></div>
+                    <!-- <div class='swiper-button-prev'></div> -->
+                    <!-- <div class='swiper-button-next'></div> -->
+                    <!-- <div class='swiper-scrollbar'></div> -->
+                </div>
+            </div>
         </div>
     </section>
 
@@ -236,52 +367,6 @@
                 </div>
             </div>
             <div class="tariff__bottom">доступ к группе с 1 числа каждого месяца - до конца месяца</div>
-        </div>
-    </section>
-
-    <section class='result' id="result">
-        <div class='container'>
-            <h3>Результаты</h3>
-            <div class='result__inner'>
-                <div class='swiper-container'>
-                    <div class='swiper-wrapper'>
-                        <div class='swiper-slide'>
-                            <img src="images/slide1.jpg" alt="">
-                        </div>
-                        <div class='swiper-slide'>
-                            <img src="images/slide2.jpg" alt="">
-                        </div>
-                        <div class='swiper-slide'>
-                            <img src="images/slide3.jpg" alt="">
-                        </div>
-                        <div class='swiper-slide'>
-                            <img src="images/slide4.jpg" alt="">
-                        </div>
-                        <div class='swiper-slide'>
-                            <img src="images/slide5.jpg" alt="">
-                        </div>
-                        <div class='swiper-slide'>
-                            <img src="images/slide1.jpg" alt="">
-                        </div>
-                        <div class='swiper-slide'>
-                            <img src="images/slide2.jpg" alt="">
-                        </div>
-                        <div class='swiper-slide'>
-                            <img src="images/slide3.jpg" alt="">
-                        </div>
-                        <div class='swiper-slide'>
-                            <img src="images/slide4.jpg" alt="">
-                        </div>
-                        <div class='swiper-slide'>
-                            <img src="images/slide5.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class='swiper-pagination'></div>
-                    <!-- <div class='swiper-button-prev'></div> -->
-                    <!-- <div class='swiper-button-next'></div> -->
-                    <!-- <div class='swiper-scrollbar'></div> -->
-                </div>
-            </div>
         </div>
     </section>
 
@@ -340,11 +425,7 @@
 
 
     <script src="js/jquery-1.11.3.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/swiper.js"></script>
-    <script src="js/jquery.maskedinput.min.js"></script>
-    <script src="js/main.min.js"></script>
     <script src="js/index.js"></script>
 </body>
 
