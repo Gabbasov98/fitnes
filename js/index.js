@@ -40,7 +40,7 @@ $(document).ready(function() {
         boxClass: 'wow',
         animateClass: 'animated',
         offset: 0,
-        mobile: true,
+        mobile: false,
         live: false
     })
     wow.init();
